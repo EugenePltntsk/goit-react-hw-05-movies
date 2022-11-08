@@ -13,7 +13,7 @@ export default function Reviews() {
       console.log('reviewsData :>> ', reviewsData);
       setReviews(reviewsData);
     });
-  }, []);
+  }, [movieId]);
 
   return (
     <div>

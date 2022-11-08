@@ -52,6 +52,7 @@ export default function Movies() {
           <li className={css.Lishka} key={item.id}>
             <Link state={{ from: location }} className={css.Link} to={`/movies/${item.id}`}>
               <img
+              alt={item.original_title}
                 className={css.Image}
                 src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
               />

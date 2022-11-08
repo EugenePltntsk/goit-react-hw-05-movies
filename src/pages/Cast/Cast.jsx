@@ -12,7 +12,7 @@ export default function Cast() {
     getCast(movieId).then(castData => {
       setCast(castData);
     });
-  }, []);
+  }, [movieId]);
 
   return (
     <div>
@@ -24,6 +24,7 @@ export default function Cast() {
               acc.push(
                 <li className={css.Lishka}>
                   <img
+                  alt={oneCast.name}
                     className={css.castPhotos}
                     src={`https://image.tmdb.org/t/p/w500${oneCast.profile_path}`}
                   />
