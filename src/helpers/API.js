@@ -19,3 +19,22 @@ export const findMovie = async (query) => {
     return data.results;
 }
 
+export const getMovieById = async (id) => {
+const { data } = await moviesApi.get(`/movie/${id}`)
+
+return data;
+
+}
+
+export const getReview = async (movie_id) => {
+    const { data } = await moviesApi.get(`/movie/${movie_id}/reviews`)
+    
+    return data.results;
+}
+
+
+export const getCast = async (movie_id) => {
+    const { data } = await moviesApi.get(`/movie/${movie_id}/credits`)
+    
+    return data.cast;
+}

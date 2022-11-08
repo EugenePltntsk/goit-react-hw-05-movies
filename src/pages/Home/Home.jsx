@@ -1,33 +1,33 @@
-import React from 'react'
+import React from 'react';
 import { getTrendingMovies } from 'helpers/API';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import css from "./Home.module.css"
 
 export default function Home() {
-
-    
-
-  const [movies, setMovies ] = useState([]);
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-
     getTrendingMovies().then(resultMovies => {
-        setMovies(resultMovies);
+      setMovies(resultMovies);
     });
-
-
-  }, [])
+  }, []);
 
   return (
+    <div>
+      Home
+      <ul className={css.MoviesGallery}>
+        {movies.map(item => (
+          <li className={css.Lishka} key={item.id}>
+            <Link className={css.Link} to={`/movies/${item.id}`}>
+              <img className={css.Image} src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} />
 
-
-    <div>Home
-        <ul>
-            {movies.map(item => ( <li key={item.id}><Link to={`/movies/${item.id}`}>{item.original_title}</Link></li> )
-            )}
-        </ul>
+              {item.original_title}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
-  )
+  );
 }
-

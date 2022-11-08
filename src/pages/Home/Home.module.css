@@ -1,0 +1,59 @@
+.MoviesGallery {
+    display: grid;
+    max-width: calc(100vw - 10px);
+    grid-template-columns: repeat(auto-fill, minmax(455px, 1fr));
+    grid-gap: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+  }
+
+.Lishka {
+    
+    box-shadow: 5px 5px 5px rgb(179, 123, 123);
+    background-color: lightgray;
+    transition: all 250ms linear;
+    border-radius: 5px;
+}
+
+.Lishka:hover {
+    box-shadow: 9px 9px 9px rgb(161, 110, 110);
+
+    transform: scale(101%);
+    
+
+}
+
+.Lishka:hover .Link{
+    color: rgb(0, 0, 0);
+    box-shadow:  black;
+
+}
+
+
+.Image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 17px;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+
+.Link {
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+    color: darkslategray;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+

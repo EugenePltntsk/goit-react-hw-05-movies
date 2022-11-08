@@ -1,0 +1,10 @@
+.DivForMovie {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+.MovieImage {
+    width: 456px;
+    height:auto;
+}

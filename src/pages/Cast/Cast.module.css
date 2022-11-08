@@ -1,0 +1,14 @@
+.castName {
+    color: white;
+}
+
+.castPhotos {
+    width: 100px;
+    
+}
+
+.castList {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}

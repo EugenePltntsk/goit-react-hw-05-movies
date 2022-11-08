@@ -1,0 +1,40 @@
+.Home {
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    transition: all 333ms linear;
+    text-shadow: 2px 2px 2px rgb(255, 0, 187);
+    letter-spacing: 4px;
+    
+}
+
+.Home:hover {
+    color: rgb(237, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 0, 140);
+    
+    
+}
+
+
+.Nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Movies {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 27px;
+    text-shadow: 2px 2px 2px rgb(255, 0, 187);
+    color: rgb(255, 255, 255);
+    transition: all 333ms linear;
+    letter-spacing: 4px;
+}
+.Movies:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 0, 140);
+    
+}
