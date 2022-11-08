@@ -10,7 +10,7 @@ export default function MovieDetails() {
   const location = useLocation();
   console.log(location);
   const goBackPath =
-    location.state?.from.pathname + location.state?.from.search || '/';
+    location.state?.from?.pathname + location.state?.from?.search || '/';
 
   useEffect(() => {
     getMovieById(movieId).then(resultData => {
@@ -22,31 +22,32 @@ export default function MovieDetails() {
     <>
       {movie && (
         <>
+        <Link className={css.Link} to={goBackPath}>Go Back</Link>
           <div
             className={css.DivForMovie}
             style={{
               backgroundImage: `linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})`,
             }}
           >
-            MovieDetails
-            <Link to={goBackPath}>Go Back</Link>
+            
+            
             <img
             alt={movie.original_title}
               className={css.MovieImage}
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             />
-            <h2>{movie.original_title}</h2>
-            <p>{movie.overview}</p>
-            <span>{movie.release_date}</span>
-            <span>Rating: {movie.vote_average}</span>
-            <span>Votes: {movie.vote_count}</span>
+            <h2 className={css.Title}>{movie.original_title}</h2>
+            <p className={css.Overview}>Overview: {movie.overview}</p>
+            <span className={css.ReleaseDate}>Release date: {movie.release_date}</span>
+            <span className={css.Raiting}>Rating: {movie.vote_average}</span>
+            <span className={css.Votes}>Votes: {movie.vote_count}</span>
             {movie.genres.map(genre => (
-              <span key={genre.id}>{genre.name} </span>
+              <span className={css.Genre} key={genre.id}>{genre.name} </span>
             ))}
-            <Link state={{ from: location.state?.from }} to="cast">
+            <Link className={css.CastLink} state={{ from: location.state?.from }} to="cast">
               Cast
             </Link>
-            <Link state={{ from: location.state?.from }} to="reviews">
+            <Link className={css.ReviewLink} state={{ from: location.state?.from }} to="reviews">
               Reviews
             </Link>
           </div>

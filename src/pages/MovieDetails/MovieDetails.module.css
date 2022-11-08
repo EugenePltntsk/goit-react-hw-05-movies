@@ -2,9 +2,91 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    display:flex;
+    flex-direction: column;
+   
+    
 
 }
 .MovieImage {
-    width: 456px;
+    width: 300px;
     height:auto;
+   
+   
+}
+
+.ReleaseDate {
+    color: white;
+}
+
+.Raiting {
+    color: white;
+
+}
+
+.Title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+.Link {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    
+    
+}
+.Link:hover {
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(248, 4, 171);
+}
+
+.Overview {
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+.Votes {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 20px;
+
+}
+
+.Genre {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 5px;
+}
+
+.CastLink {
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    
+}
+
+.CastLink:hover {
+        color:rgb(255, 255, 255);
+        text-shadow: 3px 3px 3px rgb(248, 4, 171);
+    }
+
+
+.ReviewLink {
+    text-shadow: 2px 2px 2px rgb(192, 24, 24);
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    
+}
+
+.ReviewLink:hover {
+    color:rgb(255, 255, 255);
+        text-shadow: 3px 3px 3px rgb(248, 4, 171);
 }
