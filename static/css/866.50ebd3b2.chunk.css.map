@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/866.50ebd3b2.chunk.css","mappings":"AAOA,wEACI,UACJ","sources":["pages/Reviews/Reviews.module.css"],"sourcesContent":[".Author {\n    color: white;\n}\n\n.Content {\n    color: white;\n}\n.Created {\n    color: white;\n}"],"names":[],"sourceRoot":""}
